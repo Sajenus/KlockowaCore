@@ -20,6 +20,17 @@ public class Klockowa implements CommandExecutor {
         // /klockowa
         if (args.length == 0) {
             Info(sender);
+        } else if (args.length == 1) {
+            String arg0 = args[0].toLowerCase();
+            if(arg0.equals("komendy")){
+                Komendy(sender);
+            } else if(arg0.equals("uprawnienia")){
+
+            } else if(arg0.equals("reload")){
+
+            } else if(arg0.equals("freeze")){
+
+            }
         }
 
 
@@ -38,6 +49,17 @@ public class Klockowa implements CommandExecutor {
         s.sendMessage("&e> &aLista uprawnień: &6/klockowa uprawnienia".replace('&', '§'));
         s.sendMessage("&8&mo------------------------------------------o".replace('&', '§'));
     }
+    
+    private void Komendy(CommandSender s) {
+        s.sendMessage("&8&mo------------------------------------------o".replace('&', '§'));
+        s.sendMessage("&6&lLista komend:".replace('&', '§'));
+        s.sendMessage("&e> &a/klockowa komendy".replace('&', '§'));
+        s.sendMessage("&e> &a/klockowa uprawnienia".replace('&', '§'));
+        s.sendMessage("&e> &a/klockowa reload".replace('&', '§'));
+        s.sendMessage("&e> &a/klockowa freeze".replace('&', '§'));
+        s.sendMessage("&8&mo------------------------------------------o".replace('&', '§'));
+    }
+
 
     private String Color(String s){
         return ChatColor.translateAlternateColorCodes('&', s);
