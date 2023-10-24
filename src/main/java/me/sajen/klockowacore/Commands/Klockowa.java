@@ -30,13 +30,13 @@ public class Klockowa implements CommandExecutor {
 
 
     private void Info(CommandSender s) {
-        s.sendMessage("&8&mo-------------------------o".replace('&', '§'));
+        s.sendMessage("&8&mo------------------------------------------o".replace('&', '§'));
         s.sendMessage("&e> &aSerwer korzysta z pluginu &bKlockowaCore".replace('&', '§'));
         s.sendMessage("&e> &aAutor: &bSajen".replace('&', '§'));
         s.sendMessage("&e> &aWersja: &b1.17.x".replace('&', '§'));
         s.sendMessage("&e> &aLista komend: &6/klockowa komendy".replace('&', '§'));
         s.sendMessage("&e> &aLista uprawnień: &6/klockowa uprawnienia".replace('&', '§'));
-        s.sendMessage("&8&mo-------------------------o".replace('&', '§'));
+        s.sendMessage("&8&mo------------------------------------------o".replace('&', '§'));
     }
 
     private String Color(String s){
