@@ -20,10 +20,7 @@ public class Klockowa implements CommandExecutor {
         // /klockowa
         if (args.length == 0) {
             Info(sender);
-        } else {
-            
         }
-
 
 
         return true;
